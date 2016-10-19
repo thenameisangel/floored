@@ -1,0 +1,77 @@
+html {
+	font-family: Helvetica, Century Gothic, sans-serif;
+	color: #DEE7EF;
+}
+
+ul {
+	list-style-type: none;
+	margin: 20px;
+	padding: 0px;
+
+}
+
+li {
+	display: inline;
+	padding: 10px;
+	margin-right: 15px;
+	width: 600px;
+}
+
+li:hover {
+	color: white;
+	background-color: #4f4f4f;
+}
+
+a {
+	text-decoration: none;
+	color: #4f4f4f;
+}
+
+
+.nav {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.settings {
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.main {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px black solid;
+	display: block;
+}
+
+.products {
+	text-align: center;
+	display: block;
+	width: 800px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #878787;
+	border-radius: 30px;
+}
+
+.logo-large {
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	width: 550px;
+	border: 1px black solid;
+}
+
+.wrapper {
+	margin:auto;
+}
+
+.favicon {
+	width: 40px;
+	vertical-align: middle;
+}
