@@ -1,6 +1,7 @@
 html {
 	font-family: Helvetica, Century Gothic, sans-serif;
 	font-size: 0.75rem;
+	font-weight: lighter;
 	color: #DEE7EF;
 }
 
@@ -13,19 +14,44 @@ ul {
 
 li {
 	display: inline;
-	padding: 10px;
-	margin-right: 15px;
+	padding: 1.5rem;
 	width: 600px;
 }
 
-li:hover {
-	color: white;
-	background-color: #4f4f4f;
+a:hover {
+  text-decoration: none;
+	padding: 1rem;
+	padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+	border-bottom: 4px solid #000000;
+  /*border-bottom: 4px solid #08AAFD;*/
+	/*color: #08AAFD;*/
+	/* blue accent underline color: #08AAFD */
 }
+
+/* highlight links on hover */
+/*a:hover {
+	color: white;
+	padding: 1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: #4f4f4f;
+	font-weight: lighter;
+}*/
 
 a {
 	text-decoration: none;
+	font-weight: lighter;
+	padding: 1rem;
 	color: #4f4f4f;
+}
+
+.logo-link a:hover {
+	background-color: transparent;;
+	padding: 1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 0;
+	border-bottom: 0;
 }
 
 
@@ -33,12 +59,18 @@ a {
 	position: absolute;
 	top: 10px;
 	left: 10px;
+	letter-spacing: 0.1rem;
+	font-size: 0.6rem;
+	font-weight: 600;
 }
 
 .settings {
 	position: absolute;
 	top: 40px;
 	right: 10px;
+	letter-spacing: 0.1rem;
+	font-size: 0.6rem;
+	font-weight: 600;
 }
 
 .main {
@@ -53,10 +85,10 @@ a {
 	text-align: center;
 	display: block;
 	width: 800px;
-	height: 500px;
+	height: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #b4b4b4;
+	background-color: #e9e9e9;
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
 }
@@ -69,10 +101,16 @@ a {
 	/*border: 1px black solid;*/
 }
 
+.navbar {
+	margin-left: 1rem;
+}
+
 #wrapper {
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
+	padding-bottom: 4rem;
+	padding-top: 1rem;
 	/*border: 1px black solid;*/
 }
 
@@ -87,32 +125,29 @@ a {
 	padding: 1.5rem;
 	margin-top: 1.5rem;
 	width: 150px;
+	border-radius: 1rem;
+	box-shadow: 0px 5px 5px #b4b4b4;
 	height:auto;
 }
 
-.item li {
-	display: inline-block;
-}
-
 .product-row {
-	padding: 200px;
+	padding-left: 3rem;
+	padding-top: 1rem;
 }
 
 input[type="submit"] {
   background-color: #ffffff;
   font-size: 1rem;
+	font-weight: 400;
 	color: #ffffff;
 	background-color: #000000;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  padding: 1rem;
+	padding: 1rem;
   width: 10rem;
   box-shadow: none;
-	border: none;
-  font-weight: 200;
-  margin: 1rem;
-  margin-top: 2rem;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
+	border: 1px solid #000000;
 }
 
 input[type="url"] {
@@ -122,9 +157,7 @@ input[type="url"] {
   padding: 1rem;
   width: 40rem;
   box-shadow: none;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   font-weight: 200;
-  margin: 1rem;
-  margin-top: 2rem;
 	font-style: italic;
 }
