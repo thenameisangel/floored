@@ -1,5 +1,6 @@
 html {
 	font-family: Helvetica, Century Gothic, sans-serif;
+	font-size: 0.75rem;
 	color: #DEE7EF;
 }
 
@@ -52,11 +53,12 @@ a {
 	text-align: center;
 	display: block;
 	width: 800px;
-	height: 100px;
+	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #878787;
-	border-radius: 30px;
+	background-color: #b4b4b4;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
 }
 
 .logo-large {
@@ -69,9 +71,59 @@ a {
 
 .wrapper {
 	margin:auto;
+	float: left;
+	border: 1px black solid;
 }
 
 .favicon {
 	width: 40px;
 	vertical-align: middle;
+}
+
+.item {
+	background-color: #ffffff;
+	margin-top: 1.5rem;
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	width: 150px;
+	height:auto;
+}
+
+.item li {
+	display: inline-block;
+}
+
+.product-row {
+	padding: 200px;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  font-size: 1rem;
+	color: #ffffff;
+	background-color: #000000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1rem;
+  width: 10rem;
+  box-shadow: none;
+	border: none;
+  font-weight: 200;
+  margin: 1rem;
+  margin-top: 2rem;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+input[type="url"] {
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1rem;
+  width: 40rem;
+  box-shadow: none;
+  border: 1px solid #A4A4A4;
+  font-weight: 200;
+  margin: 1rem;
+  margin-top: 2rem;
+	font-style: italic;
 }
