@@ -106,9 +106,9 @@ print <<<REGISTER
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Site Map</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-          <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
-          <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -232,9 +232,9 @@ print <<<LOGIN
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Site Map</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-          <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
-          <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
