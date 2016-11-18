@@ -79,7 +79,7 @@ left: 132px;
 	padding: 1rem;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
-	border-bottom: 4px solid #000000;
+	border-bottom: 4px solid #80cbc4;
   /*border-bottom: 4px solid #08AAFD;*/
 	/*color: #08AAFD;*/
 	/* blue accent underline color: #08AAFD */
@@ -143,7 +143,6 @@ left: 132px;
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	/*border: 1px black solid;*/
 	display: block;
 }
 
@@ -232,8 +231,6 @@ input[type="submit"] {
 	border: 1px solid #000000;
 }
 
-input:focus {outline: none !important;}
-
 input[type="url"] {
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
@@ -246,4 +243,15 @@ input[type="url"] {
 	border: 1px solid #a4a4a4;
 	font-weight: 200;
 	font-style: italic;
+	outline: none;
+}
+
+*:focus {outline: none !important;}
+
+/* disable blue outlining on all editable fields */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
