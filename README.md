@@ -5,12 +5,19 @@ URL product price tracker using the LAMP stack. Building for a Fall 2016 Web Pro
 ### Front-End
 - [ ] Remove underline on hover for the favicon
 - [ ] Fix the input:focus for the main URL search bar
-- [ ] Create the **About** Page (static HTML)
-- [ ] Create the **Contact** Page (static HTML) 
+- [x] Create the **About** Page (static HTML)
+	- [ ] Vertical align contents
+	- [ ] Fill in the correct bio information
+- [x] Create the **Contact** Page (static HTML) 
+	- [ ] Vertical align contents
+	- [ ] Fill in correct contact and bio information
+	- [ ] Change pics if ya want!
 - [x] Add Materialize to **Register** Page
 	- [ ] Adjust header font
+	- [ ] Vertical align contents
 - [x] Add Materialize to **Login** Page
 	- [ ] Adjust header font
+	- [ ] Vertical align contents
 	- [ ] Adjust "Register for an account" link color
 	- [ ] Add client-side login validation (import js from quiz #4?)
 
