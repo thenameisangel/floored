@@ -43,49 +43,82 @@ print <<<REGISTER
 <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 <!-- optimize browser for mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- import custom stylesheet -->
+<link rel="stylesheet" href="../css/about.css"/>
 </head>
 <body>
 
+<nav>
+  <div class="nav-wrapper">
+    <div class="col s12">
+      <a href="../public_html/index.html"><img class="favicon" src="../img/logo/logo-small.png"></a>
+    </div>
+  </div>
+</nav>
+
 <div class="container">
-
 <h1 align="center">Register for an Account</h1>
-
-<div class="row">
-    <form method="post" action="$script" class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input name="firstName" type="text" class="validate">
-          <label for="first_name">First Name</label>
+  <div class="row">
+      <form method="post" action="$script" class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input name="firstName" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input name="lastName" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
         </div>
-        <div class="input-field col s6">
-          <input name="lastName" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="password_1" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input name="password_1" type="password" class="validate">
-          <label for="password">Password</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="password" type="password" class="validate">
+            <label for="password">Confirm Password</label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input name="password" type="password" class="validate">
-          <label for="password">Confirm Password</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input name="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <button class="btn waves-effect waves-light" type="submit" name="register">Register
-         <i class="material-icons right">send</i>
-       </button>
-    </form>
+        <button class="btn waves-effect waves-light" type="submit" name="register">Register
+           <i class="material-icons right">send</i>
+         </button>
+      </form>
+    </div>
   </div>
 </div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Floored</h5>
+        <p class="grey-text text-lighten-4">Follow us on social media!</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Site Map</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2014 Copyright Angel Lo and Samantha Huang
+    </div>
+  </div>
+</footer>
 
 <!-- import materialize js files -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -97,15 +130,15 @@ REGISTER;
 }
 
 function register() {
-    
+
     //read in valid credentials from file
     $users = file_get_contents('passwd.txt');
     $fh = fopen('passwd.txt','r');
-    
+
     //retrieve user login attempt credentials
     $username = trim($_POST["username"]);
     $password = trim($_POST['password']);
-    
+
     //check if user entered an empty string
     if ($username == "" || $password == "") {
         registerPage();
@@ -144,39 +177,74 @@ print <<<LOGIN
 <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 <!-- optimize browser for mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- import custom stylesheet -->
+<link rel="stylesheet" href="../css/about.css"/>
 </header>
 <body>
-<div class="container">
 
-<h1> Login </h1>
-
-<div class="row">
-    <form method="post" action="$script" class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input name="userName" type="text" class="validate">
-          <label for="username">Username</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input name="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <button class="btn waves-effect waves-light" type="submit" name="login">Login
-         <i class="material-icons right">send</i>
-       </button>
-      <button class="btn waves-effect waves-light" type="reset">Clear
-         <i class="material-icons right">send</i>
-       </button>
-    </form>
+<nav>
+  <div class="nav-wrapper">
+    <div class="col s12">
+      <a href="../public_html/index.html"><img class="favicon" src="../img/logo/logo-small.png"></a>
+    </div>
   </div>
-</form>	
+</nav>
 
-<form method="get" action="$script">
-	<a href="?registerPage">Register for an account</a>
-</form>
+<div class="container">
+  <h1> Login </h1>
+
+  <div class="row">
+      <form method="post" action="$script" class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input name="userName" type="text" class="validate">
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="login">Login
+           <i class="material-icons right">send</i>
+         </button>
+        <button class="btn waves-effect waves-light" type="reset">Clear
+           <i class="material-icons right">send</i>
+         </button>
+      </form>
+    </div>
+  </form>
+
+  <form method="get" action="$script">
+  	<a href="?registerPage">Register for an account</a>
+  </form>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Floored</h5>
+        <p class="grey-text text-lighten-4">Follow us on social media!</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Site Map</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2014 Copyright Angel Lo and Samantha Huang
+    </div>
+  </div>
+</footer>
 
 <!-- import materialize js files -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -198,7 +266,7 @@ if ($_POST['username'] != 'guest' || $_POST['password'] != 'welcome') {
 } else {
 	$sessionId = session_start();
 	$loginTime = time();
-	setcookie('SESSION_ID', $sessionId, time() + 60, '/'); 
+	setcookie('SESSION_ID', $sessionId, time() + 60, '/');
 	setcookie('LOGIN_TIME', $loginTime, time() + 60, '/');
 	loginSucceededPage();
 }
