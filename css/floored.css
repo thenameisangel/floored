@@ -1,5 +1,5 @@
 html {
-	font-family: Helvetica, Century Gothic, sans-serif;
+	font-family: Roboto, Helvetica, Century Gothic, sans-serif;
 	font-size: 0.75rem;
 	font-weight: lighter;
 	color: #DEE7EF;
@@ -237,7 +237,8 @@ input[type="url"] {
 	background-color: #ffffff;
 	font-size: 1rem;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	padding: 1rem;
+	padding: 0rem;
+	padding-left: 1rem;
 	width: 40rem;
 	box-shadow: none;
 	border: 1px solid #a4a4a4;
