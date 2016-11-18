@@ -18,6 +18,7 @@ URL product price tracker using the LAMP stack. Building for a Fall 2016 Web Pro
 - [x] Add Materialize to **Login** Page
 	- [ ] Adjust header font
 	- [ ] Vertical align contents
+	- [ ] Figure out why Favicon top padding is different for login and register pages vs. about and contact us pages
 	- [ ] Adjust "Register for an account" link color
 	- [ ] Add client-side login validation (import js from quiz #4?)
 
