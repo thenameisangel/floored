@@ -5,24 +5,80 @@ html {
 	color: #DEE7EF;
 }
 
-ul {
+.bubble 
+{
+/*visibility: hidden;*/
+position: absolute;
+left: 53px;
+width: 295px;
+height: 160px;
+padding: 4px;
+background: #FFFFFF;
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border-radius: 13px;
+border: black solid 1px;
+font-family: Helvetica, Century Gothic, sans-serif;
+line-height: 1rem;
+font-size: 1rem;
+color: black;
+background-color: #e9e9e9;
+text-align: center;
+font-weight: lighter;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 19px;
+border-color: #e9e9e9 transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -19px;
+left: 132px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 19px;
+border-color: black transparent;
+display: block;
+width: 0;
+z-index: 0;
+top: -20px;
+left: 132px;
+}
+
+.navbar {
+	background-color: #e9e9e9;
+	display:block;
+}
+
+.navbar ul {
 	list-style-type: none;
 	margin: 20px;
 	padding: 0px;
 
 }
 
-li {
+.navbar ul li {
 	display: inline;
 	padding: 1.5rem;
 	width: 600px;
+	margin-left: 1rem;
 }
 
-a:hover {
-  text-decoration: none;
+.navbar ul li a:hover, .settings a:hover {
+	text-decoration: none;
 	padding: 1rem;
 	padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
 	border-bottom: 4px solid #000000;
   /*border-bottom: 4px solid #08AAFD;*/
 	/*color: #08AAFD;*/
@@ -39,12 +95,20 @@ a:hover {
 	font-weight: lighter;
 }*/
 
-a {
+.navbar ul li a, .settings a{
+	letter-spacing: 3px;
+	font-size: 1.5em;
 	text-decoration: none;
 	font-weight: lighter;
 	padding: 1rem;
 	color: #4f4f4f;
+	-o-transition: .1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
 }
+
 
 .logo-link a:hover {
 	background-color: transparent;;
@@ -66,12 +130,14 @@ a {
 
 .settings {
 	position: absolute;
-	top: 40px;
-	right: 10px;
+	top: 43px;
+	right: 12rem;
 	letter-spacing: 0.1rem;
 	font-size: 0.6rem;
 	font-weight: 600;
 }
+
+
 
 .main {
 	margin-top: 100px;
@@ -83,14 +149,14 @@ a {
 
 .products {
 	text-align: center;
-	display: block;
-	width: 800px;
-	height: 700px;
+	width: 950px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #e9e9e9;
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
+
 }
 
 .logo-large {
@@ -99,10 +165,6 @@ a {
 	display:block;
 	width: 550px;
 	/*border: 1px black solid;*/
-}
-
-.navbar {
-	margin-left: 1rem;
 }
 
 #wrapper {
@@ -120,44 +182,70 @@ a {
 }
 
 .item {
-	background-color: #ffffff;
-	margin-top: 1.5rem;
-	padding: 1.5rem;
-	margin-top: 1.5rem;
-	width: 150px;
+	display: inline-block;
+	margin-top: 5px;
+	margin:initial;
+	padding: .7rem;
+	padding-bottom: 40px;
+	width: 250px;
 	border-radius: 1rem;
-	box-shadow: 0px 5px 5px #b4b4b4;
 	height:auto;
+	-o-transition: .1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
 }
 
-.product-row {
-	padding-left: 3rem;
-	padding-top: 1rem;
+.item:hover{
+
+	background-color: #a0a0a0;
+	box-shadow: 0px 5px 5px #b4b4b4;
+}
+
+.product-image {
+	width:100%;
+	height: auto;
+	border-radius: .4rem;
+}
+
+.product-col {
+	display: inline-block;
+	margin: none;
+	vertical-align: top;
+}
+
+#col1, #col2, #col3 {
 }
 
 input[type="submit"] {
-  background-color: #ffffff;
-  font-size: 1rem;
+	font-size: 1rem;
 	font-weight: 400;
 	color: #ffffff;
 	background-color: #000000;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	padding: 1rem;
-  width: 10rem;
-  box-shadow: none;
+	width: 10rem;
+ 	box-shadow: none;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border: 1px solid #000000;
+
+
 }
 
+input:focus {outline: none !important;}
+
 input[type="url"] {
-  background-color: #ffffff;
-  font-size: 1rem;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  padding: 1rem;
-  width: 40rem;
-  box-shadow: none;
-  border: 1px solid #a4a4a4;
-  font-weight: 200;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #ffffff;
+	font-size: 1rem;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 1rem;
+	width: 40rem;
+	box-shadow: none;
+	border: 1px solid #a4a4a4;
+	font-weight: 200;
 	font-style: italic;
 }

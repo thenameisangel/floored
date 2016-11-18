@@ -7,17 +7,36 @@
 </head>
 
 <body>
+	<script>
+	function show(){
+		document.getElementById(id).style.visibility="visible";
+	}
+
+	function hide(){
+		document.getElementById(id).style.visibility = "hidden";
+	}
+	
+
+	</script>
 	<div class="navbar">
 		<section class="nav">
 			<ul>
-				<li class="logo-link"><a href="redirect.html"><img class="favicon" src="logo-small.png"></a></li>
-				<li><a href="redirect.html">ABOUT</a></li>
+				<li class="logo-link"><a href="index.html">
+				<img class="favicon" src="logo-small.png"></a></li>
+				<li><a href="#" onmouseover= "show('bubble')" onmouseout="hide('bubble')">ABOUT</a></li>
 				<li><a href="redirect.html">CONTACT</a></li>
 			</ul>
+			<p class="bubble">Hi there! We're two college students, Samantha Huang and Angel Lo. Between us, we have 5 years of coding in python, javascript, and other various languages. 
+
+			<br><br>This web app is intended to help our fellow frugal people track the prices of products all over the web, in order to make smart decisions based on pricing trends for those items.
+			<br><br>
+			This bubble will not be here in later iterations of the web page.
+			</p>
+
 		</section>
 
 		<section class="settings">
-				<li><a href="redirect.html">SETTINGS</a></li>
+				<a href="redirect.html">SETTINGS</a>
 		</section>
 	</div>
 
@@ -30,40 +49,80 @@
 	</section>
 
 	<section class="products">
-		<div class="product-row">
+		<div class="product-col">
 			<ul>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
-					</div>
+					<a href="redirect.html">
+					<figure class="item" id="col1">
+						<img class="product-image" src="bike.jpg" width="100" height="75"/>
+					</figure>
+					</a>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_2.png" width="150" height="150"/>
-					</div>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="mandolin.jpg" width="150" height="150"/>
+					</figure></a>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
-					</div>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="earrings.jpg" width="100" height="75"/>
+					</figure></a>
+				</li>
+			</ul>
+		</div>
+		<div class="product-col" id="col2">
+			<ul>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="dress.jpg" width="100" height="75"/>
+					</figure></a>
+				</li>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="tent.jpg" width="150" height="150"/>
+					</figure></a>
+				</li>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="couch.jpg" width="100" height="75"/>
+					</figure></a>
+				</li>
+			</ul>
+		</div>
+		<div class="product-col" id="col3">
+			<ul>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="headphones.jpg" width="100" height="75"/>
+					</figure></a>
+				</li>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="guitar.jpg" width="150" height="150"/>
+					</figure></a>
+				</li>
+				<li>
+					<a href="redirect.html"><figure class="item">
+						<img class="product-image" src="spoon.jpg" width="100" height="75"/>
+					</figure></a>
 				</li>
 			</ul>
 		</div>
 		<!-- <div class="product-row">
 			<ul>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 			</ul>
@@ -71,23 +130,24 @@
 		<div class="product-row">
 			<ul>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 				<li>
-					<div class="item">
-						<img src="item_1.jpg" width="100" height="75"/>
+					<p class="item">
+						<img src="bike.jpg" width="100" height="75"/>
 					</div>
 				</li>
 			</ul>
 		</div> -->
 	</section>
+
 
 </body>
 
