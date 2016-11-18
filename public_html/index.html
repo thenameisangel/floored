@@ -2,11 +2,21 @@
 <html>
 <head>
 	<title>Floored - Track Product Prices</title>
+
+	<!-- import google fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- import materialize.css -->
+	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	<!-- optimize browser for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- floored custom css -->
 	<link rel="stylesheet" type="text/css" href="../css/floored.css">
+	<!-- import logo -->
 	<link rel="icon" type="image/x-icon" href="../img/logo/favicon.ico"/>
 </head>
 
 <body>
+
 	<script>
 	function show(){
 		document.getElementById(id).style.visibility="visible";
@@ -15,96 +25,123 @@
 	function hide(){
 		document.getElementById(id).style.visibility = "hidden";
 	}
-
-
 	</script>
+
 	<div class="navbar">
 		<section class="nav">
 			<ul>
 				<li class="logo-link"><a href="index.html">
-				<img class="favicon" src="../img/logo/logo-small.png"></a></li>
-				<li><a href="#" onmouseover= "show('bubble')" onmouseout="hide('bubble')">ABOUT</a></li>
-				<li><a href="redirect.html">CONTACT</a></li>
-			</ul>
+					<img class="favicon" src="../img/logo/logo-small.png"></a></li>
+					<li><a href="#" onmouseover= "show('bubble')" onmouseout="hide('bubble')">ABOUT</a></li>
+					<li><a href="redirect.html">CONTACT</a></li>
+				</ul>
 
-		</section>
+			</section>
 
-		<section class="settings">
+			<section class="settings">
 				<a href="redirect.html">SETTINGS</a>
-		</section>
-	</div>
+			</section>
+		</div>
 
-	<section class="main">
-		<img class="logo-large" src="../img/logo/floored-logo.png" alt="Floored Logo">
-		<div id="wrapper">
+		<section class="main">
+			<img class="logo-large" src="../img/logo/floored-logo.png" alt="Floored Logo">
+			<div id="wrapper">
 				<input type="url" id="url_field" name="url" value="" placeholder="Enter the url of a product to begin tracking" />
 				<input type="submit" onsubmit="" value="TRACK">
-		</div>
-	</section>
+			</div>
+		</section>
 
-	<section class="products">
-		<div class="product-col">
-			<ul>
-				<li>
-					<a href="redirect.html">
-					<figure class="item" id="col1">
-						<img class="product-image" src="../img/products/bike.jpg" width="100" height="75"/>
-					</figure>
-					</a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/mandolin.jpg" width="150" height="150"/>
-					</figure></a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/earrings.jpg" width="100" height="75"/>
-					</figure></a>
-				</li>
-			</ul>
-		</div>
-		<div class="product-col" id="col2">
-			<ul>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/dress.jpg" width="100" height="75"/>
-					</figure></a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/tent.jpg" width="150" height="150"/>
-					</figure></a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/couch.jpg" width="100" height="75"/>
-					</figure></a>
-				</li>
-			</ul>
-		</div>
-		<div class="product-col" id="col3">
-			<ul>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/headphones.jpg" width="100" height="75"/>
-					</figure></a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/guitar.jpg" width="150" height="150"/>
-					</figure></a>
-				</li>
-				<li>
-					<a href="redirect.html"><figure class="item">
-						<img class="product-image" src="../img/products/spoon.jpg" width="100" height="75"/>
-					</figure></a>
-				</li>
-			</ul>
-		</div>
-	</section>
+		<section class="products">
+			<div class="product-col">
+				<ul>
+					<li>
+						<a href="redirect.html">
+							<figure class="item" id="col1">
+								<img class="product-image" src="../img/products/bike.jpg" width="100" height="75"/>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/mandolin.jpg" width="150" height="150"/>
+						</figure></a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/earrings.jpg" width="100" height="75"/>
+						</figure></a>
+					</li>
+				</ul>
+			</div>
+			<div class="product-col" id="col2">
+				<ul>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/dress.jpg" width="100" height="75"/>
+						</figure></a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/tent.jpg" width="150" height="150"/>
+						</figure></a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/couch.jpg" width="100" height="75"/>
+						</figure></a>
+					</li>
+				</ul>
+			</div>
+			<div class="product-col" id="col3">
+				<ul>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/headphones.jpg" width="100" height="75"/>
+						</figure></a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/guitar.jpg" width="150" height="150"/>
+						</figure></a>
+					</li>
+					<li>
+						<a href="redirect.html"><figure class="item">
+							<img class="product-image" src="../img/products/spoon.jpg" width="100" height="75"/>
+						</figure></a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Footer Content</h5>
+						<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+							<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+							<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+							<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2014 Copyright Angel Lo and Samantha Huang
+					<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+				</div>
+			</div>
+		</footer>
 
-</body>
+		<!-- import materialize js files -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/materialize.min.js"></script>
+	</body>
 
-</html>
+	</html>
