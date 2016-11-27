@@ -17,6 +17,8 @@ if (isset($_POST['login'])) {
 	loginResultPage();
 } else if (isset($_GET['registerPage'])) {
 	registerPage();
+} else if (isset($_POST['register'])) {
+	register();
 } else if (!isset($_COOKIE['SESSION_ID'])) {
 	loginPage();
 } else if (isset($_POST['logout'])) {
@@ -72,14 +74,20 @@ print <<<REGISTER
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input name="password_1" type="password" class="validate">
-            <label for="password">Password</label>
+            <input name="username" type="text" class="validate">
+            <label for="username">Username</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input name="password" type="password" class="validate">
-            <label for="password">Confirm Password</label>
+            <label for="password">Password</label>
+          </div>
+	</div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input name="confirmPassword" type="password" class="validate">
+            <label for="confirmPassword">Confirm Password</label>
           </div>
         </div>
         <div class="row">
@@ -134,15 +142,11 @@ function register() {
     //read in valid credentials from file
     $users = file_get_contents('passwd.txt');
     $fh = fopen('passwd.txt','r');
+    echo $users;
 
     //retrieve user login attempt credentials
     $username = trim($_POST["username"]);
     $password = trim($_POST['password']);
-
-    //check if user entered an empty string
-    if ($username == "" || $password == "") {
-        registerPage();
-    }
 
     //check if user entered an existing username
     if (strpos($users, "\n".$username.":") == true){
@@ -197,7 +201,7 @@ print <<<LOGIN
       <form method="post" action="$script" class="col s12">
         <div class="row">
           <div class="input-field col s6">
-            <input name="userName" type="text" class="validate">
+            <input name="username" type="text" class="validate">
             <label for="username">Username</label>
           </div>
         </div>
@@ -256,22 +260,51 @@ LOGIN;
 
 }
 
+##########################################################
+
+
 function loginResultPage() {
 
 $script = $_SERVER['PHP_SELF'];
+//home page URL
+$homeURL = 'http://zweb.cs.utexas.edu/users/cs329e-fa16/angello/floored/public_html/index.html';
 
-//check credentials
-if ($_POST['username'] != 'guest' || $_POST['password'] != 'welcome') {
-	loginFailedPage();
+//grab posted data
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+//concatenate user login credentials for validation
+$loginAttempt = $username.':'.$password;
+
+//open credentials file for reading
+$credentialsFile = fopen('passwd.txt', 'r') or die ("Unable to open file.");
+$isValid = False;
+
+//validate credentials from file
+while (!feof($credentialsFile)) {
+        $credentials = fgets($credentialsFile);
+        if ($loginAttempt == trim($credentials)) {
+                $isValid = True;
+        }
+}
+
+//start session if login is valid
+if ($isValid) {
+        $sessionId = session_start();
+        $loginTime = time();
+        setcookie('SESSION_ID', $sessionId, time() + 300, '/');
+        setcookie('LOGIN_TIME', $loginTime, time() + 300, '/');
+	header('Location: '.$homeURL);
 } else {
-	$sessionId = session_start();
-	$loginTime = time();
-	setcookie('SESSION_ID', $sessionId, time() + 60, '/');
-	setcookie('LOGIN_TIME', $loginTime, time() + 60, '/');
-	loginSucceededPage();
+        loginFailedPage();
 }
 
+//close file
+fclose($credentialsFile);
+
 }
+
+##########################################################
 
 function loginFailedPage() {
 	print <<<PAGE
@@ -282,6 +315,8 @@ function loginFailedPage() {
 	</html>
 PAGE;
 }
+
+##########################################################
 
 function loginSucceededPage() {
 	print <<<PAGE
