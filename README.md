@@ -32,5 +32,7 @@ URL product price tracker using the LAMP stack. Building for a Fall 2016 Web Pro
 	- [ ] Remove server-side validation of empty username/password fields
 - [ ] On URL submit, pull product name and price from page
 	- [ ] *Temp* add product name and price to txt file until we set up mySQL
-- [ ] Set up mySQL
+	- [ ] Scrape product name and price from e-commerce sites in scrape.php
+	- [ ] Add returned product name and price to a tracking object
+- [ ] Set up mySQL Connection
 
