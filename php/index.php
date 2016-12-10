@@ -5,7 +5,6 @@ include('scrape.php');
 ################################################################################
 
 print <<<BODY
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,19 +62,19 @@ print <<<BODY
 			<div class="product-col">
 				<ul>
 					<li>
-						<a href="redirect.html">
+						<a href="../html/redirect.html">
 							<figure class="item" id="col1">
 								<img class="product-image" src="../img/products/bike.jpg" width="100" height="75"/>
 							</figure>
 						</a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/mandolin.jpg" width="150" height="150"/>
 						</figure></a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/earrings.jpg" width="100" height="75"/>
 						</figure></a>
 					</li>
@@ -84,17 +83,17 @@ print <<<BODY
 			<div class="product-col" id="col2">
 				<ul>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/dress.jpg" width="100" height="75"/>
 						</figure></a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/tent.jpg" width="150" height="150"/>
 						</figure></a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/couch.jpg" width="100" height="75"/>
 						</figure></a>
 					</li>
@@ -103,17 +102,17 @@ print <<<BODY
 			<div class="product-col" id="col3">
 				<ul>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/headphones.jpg" width="100" height="75"/>
 						</figure></a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/guitar.jpg" width="150" height="150"/>
 						</figure></a>
 					</li>
 					<li>
-						<a href="redirect.html"><figure class="item">
+						<a href="../html/redirect.html"><figure class="item">
 							<img class="product-image" src="../img/products/spoon.jpg" width="100" height="75"/>
 						</figure></a>
 					</li>
@@ -149,9 +148,9 @@ print <<<BODY
 		<!-- import materialize js files -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/materialize.min.js"></script>
-</body>
-</html>
+	</body>
 
+	</html>
 BODY;
 
 ################################################################################
