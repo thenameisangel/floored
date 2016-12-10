@@ -38,27 +38,16 @@ print <<<BODY
 	<div class="navbar">
 		<section class="nav">
 			<ul>
-<<<<<<< HEAD:php/index.php
 				<li class="logo-link">
 					<img class="favicon" src="../img/logo/logo-small.png"></li>
 					<li><a href="../html/about.html">ABOUT</a></li>
 					<li><a href="../html/contact.html">CONTACT</a></li>
-=======
-				<li class="logo-link"><a href="index.html">
-					<img class="favicon" src="../img/logo/logo-small.png"></a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
->>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422:public_html/index.html
 				</ul>
 
 			</section>
 
 			<section class="settings">
-<<<<<<< HEAD:php/index.php
 				<a href="login.php">LOGIN</a>
-=======
-				<a href="../php/login.php">LOGIN</a>
->>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422:public_html/index.html
 			</section>
 		</div>
 
@@ -142,17 +131,10 @@ print <<<BODY
 					<div class="col l4 offset-l2 s12">
 						<h5 class="white-text">Site Map</h5>
 						<ul>
-<<<<<<< HEAD:php/index.php
 							<li><a class="grey-text text-lighten-3" href="index.php">Home</a></li>
 							<li><a class="grey-text text-lighten-3" href="login.php">Login</a></li>
 							<li><a class="grey-text text-lighten-3" href="../html/about.html">About</a></li>
-							<li><a class="grey-text text-lighten-3" href="../contact.html">Contact Us</a></li>
-=======
-							<li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-							<li><a class="grey-text text-lighten-3" href="../php/login.php">Login</a></li>
-							<li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
-							<li><a class="grey-text text-lighten-3" href="contact.html">Contact Us</a></li>
->>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422:public_html/index.html
+							<li><a class="grey-text text-lighten-3" href="../html/contact.html">Contact Us</a></li>
 						</ul>
 					</div>
 				</div>
