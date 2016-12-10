@@ -53,7 +53,11 @@ print <<<REGISTER
 <nav>
   <div class="nav-wrapper">
     <div class="col s12">
+<<<<<<< HEAD
       <a href="index.php"><img class="favicon" src="../img/logo/logo-small.png"></a>
+=======
+      <a href="../public_html/index.html"><img class="favicon" src="../img/logo/logo-small.png"></a>
+>>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422
     </div>
   </div>
 </nav>
@@ -114,9 +118,15 @@ print <<<REGISTER
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Site Map</h5>
         <ul>
+<<<<<<< HEAD
           <li><a class="grey-text text-lighten-3" href="index.php">Home</a></li>
           <li><a class="grey-text text-lighten-3" href="../html/about.html">About</a></li>
           <li><a class="grey-text text-lighten-3" href="../html/contact.html">Contact Us</a></li>
+=======
+          <li><a class="grey-text text-lighten-3" href="../public_html/index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/contact.html">Contact Us</a></li>
+>>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422
         </ul>
       </div>
     </div>
@@ -189,7 +199,11 @@ print <<<LOGIN
 <nav>
   <div class="nav-wrapper">
     <div class="col s12">
+<<<<<<< HEAD
       <a href="index.php"><img class="favicon" src="../img/logo/logo-small.png"></a>
+=======
+      <a href="../public_html/index.html"><img class="favicon" src="../img/logo/logo-small.png"></a>
+>>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422
     </div>
   </div>
 </nav>
@@ -236,9 +250,15 @@ print <<<LOGIN
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Site Map</h5>
         <ul>
+<<<<<<< HEAD
           <li><a class="grey-text text-lighten-3" href="index.php">Home</a></li>
           <li><a class="grey-text text-lighten-3" href="../html/about.html">About</a></li>
           <li><a class="grey-text text-lighten-3" href="../html/contact.html">Contact Us</a></li>
+=======
+          <li><a class="grey-text text-lighten-3" href="../public_html/index.html">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/about.html">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="../public_html/contact.html">Contact Us</a></li>
+>>>>>>> 2c93052881c0c26d8a90e645afd3b39e447a3422
         </ul>
       </div>
     </div>
