@@ -1,3 +1,11 @@
+<?php
+// Import data scraping function
+include('scrape.php');
+
+################################################################################
+
+print <<<BODY
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,16 +38,16 @@
 	<div class="navbar">
 		<section class="nav">
 			<ul>
-				<li class="logo-link"><a href="index.html">
-					<img class="favicon" src="../img/logo/logo-small.png"></a></li>
-					<li><a href="#" onmouseover= "show('bubble')" onmouseout="hide('bubble')">ABOUT</a></li>
-					<li><a href="redirect.html">CONTACT</a></li>
+				<li class="logo-link">
+					<img class="favicon" src="../img/logo/logo-small.png"></li>
+					<li><a href="../html/about.html">ABOUT</a></li>
+					<li><a href="../html/contact.html">CONTACT</a></li>
 				</ul>
 
 			</section>
 
 			<section class="settings">
-				<a href="redirect.html">SETTINGS</a>
+				<a href="login.php">LOGIN</a>
 			</section>
 		</div>
 
@@ -123,9 +131,10 @@
 					<div class="col l4 offset-l2 s12">
 						<h5 class="white-text">Site Map</h5>
 						<ul>
-							<li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-							<li><a class="grey-text text-lighten-3" href="#!">Login</a></li>
-							<li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.php">Home</a></li>
+							<li><a class="grey-text text-lighten-3" href="login.php">Login</a></li>
+							<li><a class="grey-text text-lighten-3" href="../html/about.html">About</a></li>
+							<li><a class="grey-text text-lighten-3" href="../contact.html">Contact Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -140,6 +149,11 @@
 		<!-- import materialize js files -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/materialize.min.js"></script>
-	</body>
+</body>
+</html>
 
-	</html>
+BODY;
+
+################################################################################
+
+?>

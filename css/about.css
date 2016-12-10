@@ -1,0 +1,10 @@
+.favicon {
+	width: 50px;
+	vertical-align: middle;
+  padding-left: 15px;
+}
+
+.card.small {
+  width: 250px;
+  height: 420px;
+}
